@@ -1,0 +1,17 @@
+{
+    "env" :{
+        "url": "192.168.0.1",
+        "username": "",
+        "password": ""
+    },
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "integrationFolder": "./src/integration",
+    "pluginsFile": "./src/plugins/index.ts",
+    "supportFile": "./src/plugins/index.ts", 
+    "defaultCommandTimeout": 80000,
+    "reporterOptions": {
+        "mochaFile": "src/results/output-[hash].xml"
+    },
+    "video": false
+}
