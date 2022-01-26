@@ -1,3 +1,5 @@
+import { copyFileSync } from "fs";
+
 describe('Restart Router', () => {
     before(() => {
         cy.visit(`${Cypress.env('url')}`);
@@ -9,9 +11,8 @@ describe('Restart Router', () => {
         cy.get('.btn').click();
         cy.get("#troubleloc").click();
         cy.get('#resetloc').click();
+        cy.get('#btn1').click();
+        cy.get('#popup_ok').click();
     });
 
-    after(() => {
-        cy.contains('Logout').click();
-    });
 });
